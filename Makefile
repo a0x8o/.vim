@@ -2,7 +2,7 @@ SHELL := bash
 
 .PHONY: update
 update: ## Updates the nix flake.
-	nix flake update
+	nix --extra-experimental-features nix-command flake update
 
 .PHONY: help
 help:
